@@ -5,7 +5,7 @@ import PyPDF2
 openai.api_key = "sk-proj-pWc1zdam04FJeAvbv1sUT3BlbkFJtjauIqeEr2yHeHaMU9Pa"
 
 def generate_response(user_input, pdf_text):
-    # Prepare the prompt
+    
     prompt = f"User: {user_input}\n\nPDF Text: {pdf_text}\n\nAssistant:"
 
     response = openai.Completion.create(
